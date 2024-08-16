@@ -10,6 +10,7 @@ class Game:
         self.screen = screen
         self.object=[]
         self.game_state = GameState.NONE
+        self.map = []
 
         def set_up(self):
             player = Player(1,1)
@@ -17,6 +18,8 @@ class Game:
             self.objects.append(player)
             print("do set up")
             self.game_state =GameState.RUNNING
+
+            self.load_map("01")
 
             def update(self):
                 self.screen.fill(config.BLACK)
@@ -42,3 +45,15 @@ def handle_events(self):
                 self.player.update_position(-1, 0)
             elif event.key == pygame.K_d:
                 self.player.update_position(1, 0)
+
+def load_map(self, param):
+    with open('maps/' + file_name + ".txt") as map_file:
+        count = 0;
+        for line in map_file:
+            map_line = []
+                for i in range(0, len(line) - 1, 2):
+                   tiles.append(line[i])
+                   
+                self.map.append([tiles])
+print(self.map)
+input()
