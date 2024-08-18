@@ -25,7 +25,7 @@ class Game:
         self.screen.fill(config.BLACK)
         print("update")
         self.handle_events()
-
+        self.render_map(self.screen)
         for object in self.objects:
             object.render(self.screen)
 
