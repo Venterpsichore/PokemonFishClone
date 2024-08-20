@@ -1,7 +1,5 @@
 import pygame
 import config
-from game import Game
-from game_state import GameState
 
 pygame.init()
 
@@ -19,5 +17,5 @@ game.set_up(
 while game.game_state == GameState.RUNNING:
     clock.tick(50)
     game.update ()
-    pygame.display.flip()
+
 
