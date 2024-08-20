@@ -1,6 +1,5 @@
 import pygame
 import config
-
 from game import Game
 from game_state import GameState
 
