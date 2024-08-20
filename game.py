@@ -1,6 +1,4 @@
-
 import pygame
-
 import config
 from player import Player
 from game_state import GameState
@@ -30,7 +28,7 @@ def handle_events(self):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             self.game_state = GameState.ENDED
-            handle key events
+            #handle key events
             elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 self.game_state = GameState.ENDED
