@@ -14,7 +14,7 @@ class Player:
 
     def update_position(self, x_change, y_change):
         self.position[0] += x_change
-        self.position[0] += y_change
+        self.position[1] += y_change
 
     def render(self,screen):
         print("render player")
